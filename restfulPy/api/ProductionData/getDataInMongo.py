@@ -10,3 +10,4 @@ def getProdByFuelTypeInMongo(year,month,day):
     fd=datetime.datetime(year,month,day)
     stfd=datetime.datetime.strftime(fd,"%Y%m%d")
     return json.loads(json_util.dumps(collection.find_one({"flowdate":stfd})))
+

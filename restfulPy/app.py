@@ -6,6 +6,7 @@ from restfulPy.api.ProductionData.endpoints.prodPerFuelType import ns as prod_pe
 from restfulPy.api.restplus import api
 
 
+
 app = Flask(__name__)
 logging.config.fileConfig('../logging.conf')
 log = logging.getLogger(__name__)
